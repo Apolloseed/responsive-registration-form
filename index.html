@@ -3,14 +3,15 @@
     <head>
         <meta name="viewport" content="width=device-width", intial-scale="1">
         <link rel="stylesheet" href="../styles/style.css">
+        <title>Code Review</title>
     </head>
 
 <body>
-    <div>   
+    <div class="intro">   
         <h1>The Code Review</h1>
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
-        <hr>
+        <hr> <!-- Use general child selector-->
         <hr>
     </div>
     <form>
@@ -21,12 +22,12 @@
             <label>Email Address</label>
             <input type="email" id="fullname" name="full-name">
             <label>Phone Number</label>
-            <input type="text" id="fullname" name="full-name">
+            <input type="tel" id="fullname" name="full-name">
             <label>Street Address</label>
-            <input type="address" id="fullname" name="full-name">
+            <input type="text" id="fullname" name="full-name">
             <label>City</label>
             <input type="text" id="fullname" name="full-name">
-            <label>State</label>
+            <label>State</label> <!-- drop down menu needed here-->
             <input type="text" id="fullname" name="full-name">
             <label>Zip Code</label>
             <input type="text" id="fullname" name="full-name">
@@ -35,13 +36,36 @@
         <h2>Newsletter</h2>
         <fieldset>
             <label>Select the newsletters you would like to recieve</label>
-            <label>HTML News</label>
-            <label>CSS News</label>
-            <label>Javascript News</label>
+            <br>
+            
+            <div class="news">
+                <input type="checkbox" id="html-news" name="html_news">
+                <label for="html-news">HTML News</label>
+            </div>
+            <br>
+            <div class="news">
+                <input type="checkbox" id="css-news" name="css_news">
+                <label>CSS News</label>
+            </div>
+            <br>
+            <div class="news">
+                <input type="checkbox" id="js-news" name="javascript_news">
+                <label>Javascript News</label>
+            </div>
+            <br>
             <br>
             <label>Select the newsletters you would like to recieve</label>
-            <label>HTML</label>
-            <label>Plain Text</label>
+            <div class="news">
+                <input type="radio" id="html-format" name="newsletter">
+                <label for="html-format">HTML</label>
+            </div>
+            <br>
+            <div class="news">
+                <input type="radio" id="plain-format" name="newsletter">
+                <label for="plain-format">Plain Text</label>
+            </div>
+            <br>
+            <br>
             <label>Other topics you'd like to hear  about</label>
             <textarea></textarea>
         </fieldset>
